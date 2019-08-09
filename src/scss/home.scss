@@ -42,8 +42,11 @@ body{
 
 .mega-menu{
     padding: 0;
-    background-color: var(--nova-moto-center-white);
     height: 120px;
+    background-color: var(--nova-moto-center-white);
+    -webkit-box-shadow: -7px 33px 84px -34px rgba(0,0,0,0.87);
+    -moz-box-shadow: -7px 33px 84px -34px rgba(0,0,0,0.87);
+    box-shadow: -7px 33px 84px -34px rgba(0,0,0,0.87);
 }
 
 .mega-menu-logo{
@@ -115,9 +118,47 @@ body{
     margin-left:10px;
 }
 
+
+// BANNER
+
+.wrapper-banner{
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .banner{
-    background-color: var(--nova-moto-center-2);
-    padding: 0;
+    background-color: var(--nova-moto-center-4);
+}
+
+.banner::before{
+    content:"";
+    background-image: url(/src/img/banner-chamada-elemento-01.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-x: -100px;
+    background-position-y: 10px;
+    position: absolute;
+    top:0;
+    left:-35%;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.banner::after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--nova-moto-center-4) 0%, var(--nova-moto-center-3) 100%); 
+    transform: skewX(-35deg) translateX(-50%);
+    -webkit-box-shadow: inset -7px 33px 84px -34px rgba(0,0,0,0.37);
+    -moz-box-shadow: inset -7px 33px 84px -34px rgba(0,0,0,0.37);
+    box-shadow: inset -7px 33px 84px -34px rgba(0,0,0,0.37);
 }
 
 .banner-chamada{
@@ -127,12 +168,14 @@ body{
     height: 100%;
     justify-content: center;
     flex-direction: column;
-    margin-left: 10%;
+    padding-left: 5%;
     z-index: 10;
-    color: #fff;
-    background-color: var(--nova-moto-center-2);
+    color: var(--nova-moto-center-white);
 }
 
+.banner-chamada-imagem{
+    transform: translateX(100px);
+}
 
 
 // PROVISORIO ATE FINALIZAR LATOUT DESKTOP
@@ -165,8 +208,6 @@ body{
         height: 20px;
     }
 
-
-    // PROVISORIO ATE FINALIZAR LATOUT DESKTOP
     .mega-menu-list{
         display: none;
     }
@@ -181,5 +222,17 @@ body{
 
     .mega-menu-search-icon::after{
         display: none; 
+    }
+
+    .banner::before{
+        display: none;
+    }
+
+    .banner::after{
+        display: none;
+    }
+
+    .banner-chamada-imagem{
+        transform: translateX(0px);
     }
 }
