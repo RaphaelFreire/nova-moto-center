@@ -120,10 +120,8 @@ body{
 
 
 // BANNER
-
 .wrapper-banner{
     width: 100%;
-    height: auto;
     margin-right: auto;
     margin-left: auto;
 }
@@ -175,6 +173,7 @@ body{
 
 .banner-chamada-imagem{
     transform: translateX(100px);
+    height: 100%;
 }
 
 
