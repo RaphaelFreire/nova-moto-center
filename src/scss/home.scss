@@ -99,7 +99,7 @@ body{
 
 .mega-menu-search-icon::after{
     content: "";
-    background-image: url(/src/img/icon-search.svg);
+    background-image: url(img/icon-search.svg);
     position: absolute;
     width: 30px;
     height: 30px;
@@ -132,7 +132,7 @@ body{
 
 .banner::before{
     content:"";
-    background-image: url(/src/img/banner-chamada-elemento-01.svg);
+    background-image: url(img/banner-chamada-elemento-01.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position-x: -100px;
