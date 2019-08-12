@@ -190,12 +190,12 @@ body{
 
 .produtos-area{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 60px;
 }
 
 .produto-wrapper{
-    width: 260px;
+    width: 225px;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid var(--nova-moto-center-5);
@@ -261,13 +261,11 @@ body{
 }
 
 .banner-ofertas-oferta{
-    flex: 0 0 50%;
-    max-width: 50%;
     padding-right: 0px;
     padding-left: 0px;
 }
 
-.banner-ofertas-area > img{
+.banner-ofertas-oferta > img{
     width: 100%;
 }
 
