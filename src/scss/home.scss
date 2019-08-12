@@ -271,6 +271,7 @@ body{
 
 
 
+
 // FOOTER
 
 .footer{
@@ -327,7 +328,7 @@ body{
     font-weight: 600;
 }
 
-.footer-loja-imagem{
+.footer-loja-mapa{
     width: 200px;
     height: 175px;
     float: left;
@@ -350,6 +351,14 @@ body{
     font-weight: 600;
 }
 
+.footer-pagamento-wrapper-icones{
+    display: block;
+    width: 100%;
+}
+
+.footer-pagamento-wrapper-icones > img{
+    width: 30px;
+}
 
 
 
@@ -418,4 +427,77 @@ body{
     .banner-chamada-imagem{
         transform: translateX(0px);
     }
+
+
+
+
+    // @425 FOOTER
+
+    .footer{
+        padding-top: 15px;
+    }
+
+    .footer-formulario-titulo{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .footer-formulario-input{
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .footer-formulario-botao{
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer-formulario-info{
+        text-align: center;
+    }
+
+    .footer-loja-titulo{
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .footer-loja-mapa{
+        float: initial;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-loja-info{
+        float: initial;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-pagamento-titulo{
+        margin-top: 15px;
+        display: block;
+        text-align: center;
+    }
+
+
+    .footer-pagamento{
+        width: 100%;
+    }
+
+
+    .footer-pagamento-wrapper-icones > img{
+        width: 60px;
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+
+
 }
