@@ -188,17 +188,86 @@ body{
 }
 
 
-.produto-wrapper{
-    position: relative;
+.produtos-area{
     display: flex;
-    flex-direction: column;
-    width: 280px;
-    word-wrap: break-word;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.produto-wrapper{
+    width: 260px;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid red;
-    border-radius: .25rem;
+    border: 1px solid var(--nova-moto-center-5);
 }
+
+.produto-imagem{
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.produto-corpo{
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    line-height: 1.25rem;
+    color: var(--nova-moto-center-6);
+}
+
+.produto-titulo{
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.produto-preco{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align:center;
+}
+
+.produto-preco-condicoes{
+    display:block;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.produto-button{
+    display: block;
+    width: 175px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: var(--nova-moto-center-white);
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    background-color: var(--nova-moto-center-2);
+    border: 1px solid transparent;
+    padding: .375rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+// BANNER OFERTA
+.banner-ofertas-area{
+    margin-bottom: 60px;
+}
+
+.banner-ofertas-oferta{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
 
 
 
