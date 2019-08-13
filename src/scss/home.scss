@@ -120,17 +120,17 @@ body{
 
 
 // BANNER
-.wrapper-banner{
+.wrapper-slider{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.banner{
+.slider{
     background-color: var(--nova-moto-center-4);
 }
 
-.banner::before{
+.slider::before{
     content:"";
     background-image: url(../img/banner-chamada-elemento.svg);
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ body{
     z-index: 10;
 }
 
-.banner::after{
+.slider::after{
     content:"";
     position: absolute;
     top:0;
@@ -159,7 +159,7 @@ body{
     box-shadow: inset -7px 33px 84px -34px rgba(0,0,0,0.37);
 }
 
-.banner-chamada{
+.slider-chamada{
     position: absolute;
     display: flex;
     width: 50%;
@@ -171,7 +171,7 @@ body{
     color: var(--nova-moto-center-white);
 }
 
-.banner-chamada-imagem{
+.slider-chamada-imagem{
     transform: translateX(100px);
     height: 100%;
     max-height: 730px;
@@ -181,12 +181,17 @@ body{
 // TITULO PRODUTOS
 
 .titulo-produtos{
-    height: 180px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--nova-moto-center-1); 
 }
 
+
+// PRODUTOS 
 
 .produtos-area{
     display: flex;
@@ -242,7 +247,7 @@ body{
     display: block;
     width: 175px;
     margin: 0 auto;
-    font-weight: 400;
+    font-weight: 900;
     color: var(--nova-moto-center-white);
     text-decoration: none;
     text-align: center;
@@ -255,10 +260,27 @@ body{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-// BANNER OFERTA
-.banner-ofertas-area{
-    margin-bottom: 60px;
+.produto-button:hover{
+    text-decoration: none;
+    color: var(--nova-moto-center-white);
+    background-color: var(--nova-moto-center-4);
 }
+
+
+// TITULO OFERTA
+
+.titulo-ofertas{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--nova-moto-center-1); 
+}
+
+
+// BANNER OFERTA
 
 .banner-ofertas-oferta{
     padding-right: 0px;
