@@ -458,15 +458,15 @@ body{
         display: none; 
     }
 
-    .banner::before{
+    .slider::before{
         display: none;
     }
 
-    .banner::after{
+    .slider::after{
         display: none;
     }
 
-    .banner-chamada-imagem{
+    .slider-chamada-imagem{
         transform: translateX(0px);
     }
 
@@ -475,8 +475,26 @@ body{
 
     // @425 FOOTER
 
+
+    .produto-wrapper{
+        width: 280px;
+        margin-bottom: 15px;
+    }
+
+    .produtos-area {
+        margin-bottom: 0px;
+    }
+
+
+
+
+
+
+
+
     .footer{
         padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .footer-formulario-titulo{
@@ -516,8 +534,9 @@ body{
 
     .footer-loja-info{
         float: initial;
-        width: 90%;
+        width: 95%;
         display: block;
+        font-size: 1rem;
         margin: 0 auto;
         text-align: center;
     }
