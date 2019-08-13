@@ -414,9 +414,9 @@ body{
 
 // PROVISORIO ATE FINALIZAR LATOUT DESKTOP
 @media (max-width: 980px) {
-    .mega-menu-list{
-        display: none;
-    }
+    // .mega-menu-list{
+    //     display: none;
+    // }
 }
 
 
@@ -447,8 +447,27 @@ body{
         height: auto;
     }
 
+
+
     .mega-menu-list{
-        display: none;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        z-index: 11;
+    }
+
+    .mega-menu-list > .item {
+        width: 100%;
+        padding: 0;
+        z-index: 11;
+    }
+
+    .mega-menu-list > .item > a{
+        line-height: 15vh;
+        z-index: 11;
     }
 
     .mega-menu-icon-user{
