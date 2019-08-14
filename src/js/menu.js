@@ -5,7 +5,6 @@ console.log($megaMenuList);
 console.log($megaMenu);
 
 $megaMenu.addEventListener("click", () =>{
-  $megaMenu.classList.add("-fechado");
-
-  $megaMenuList.classList.add("active");
+  $megaMenu.classList.toggle("-fechado");
+  $megaMenuList.classList.toggle("active");
 })
