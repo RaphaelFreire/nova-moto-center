@@ -545,7 +545,7 @@ body {
 		position: fixed;
 		left: 0;
 		bottom: 0px;
-		background-color: var(--nova-moto-center-5);
+		background-color: var(--nova-moto-center-3);
 		color: var(--nova-moto-center-white);
 		z-index: 20;
 		transform: translateY(100%);
@@ -556,12 +556,13 @@ body {
 		display: block;
 		border: none;
 		width: 100%;
+		height: -100%;
 		padding: 0;
 		z-index: 20;
 	}
 
 	.mega-menu-list > .item > a {
-		line-height: 12.33vh;
+		line-height: 13.33vh;
 		font-size: 2rem;
 		z-index: 20;
 	}
