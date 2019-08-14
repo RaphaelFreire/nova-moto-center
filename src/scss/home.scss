@@ -529,8 +529,8 @@ body {
 		box-sizing: border-box;
 		width: 33.333%;
 		height: 70px;
-		background: url(../img/icon-menu.svg) var(--nova-moto-center-white) center
-			no-repeat;
+		background: url(../img/icon-menu.svg) center no-repeat;
+		background-color: var(--nova-moto-center-white);
 		text-indent: -9999px;
 		margin: 0px;
 		position: fixed;
