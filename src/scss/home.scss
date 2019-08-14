@@ -13,7 +13,7 @@ body {
 	height: 50px;
 }
 
-.bar-top-list-telefone{
+.bar-top-telefone{
 	width: 25%;
 	display: flex;
 	align-items: center;
@@ -82,17 +82,6 @@ body {
 	border-right: 1px solid var(--nova-moto-center-1-light);
 } 
 
-// .mega-menu-list > .item:before {
-// 	content: "";
-// 	position: absolute;
-// 	background-color: var(--nova-moto-center-1-light);
-// 	opacity: 0.2;
-// 	left: 0;
-// 	top: 0;
-// 	width: 1px;
-// 	height: 100%;
-// }
-
 .mega-menu-list > .item > a {
 	width: 100%;
 	display: inline-block;
@@ -139,15 +128,27 @@ body {
 }
 
 .mega-menu-icon-user {
-	width: 25px;
-	height: 25px;
-	// margin-left: 10px;
+	width: 30px;
+	height: 30px;
 }
 
 .mega-menu-icon-car {
-	width: 25px;
-	height: 25px;
-	// margin-left: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+.mega-menu-icon-car-quantidade{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-color: var(--nova-moto-center-1);
+	color: var(--nova-moto-center-white);
+	font-size: 0.5rem;
+	line-height: 15px;
+	border-radius: 100%;
+	text-align: center;
+	float: right;
+	margin-left: -10px;
 }
 
 // BANNER
@@ -455,6 +456,7 @@ body {
 		
 }
 
+
 @media(max-width: 990px){
 
 	.mega-menu{
@@ -479,10 +481,6 @@ body {
 		margin-left: 0;	
 	}
 
-	// .mega-menu-list > .item{
-	// 	height: 100%;
-	// }
-
 	.mega-menu-list > .item > a{
 		line-height: 55px;
 		padding: 5px;
@@ -492,26 +490,42 @@ body {
 		width: 150px;
 	}
 
-	.mega-menu-icon-user {
-		// position: absolute;
-		// right: 100px;
-		// top: 20px;
-	}
-
-	.mega-menu-icon-car {
-		// position: absolute;
-		// right: 50px;
-		// top: 20px;
-	}
 }
 
 
 // PROVISORIO ATE FINALIZAR LATOUT DESKTOP
-@media (max-width: 980px) {
-	// .mega-menu-list{
-	//     display: none;
-	// }
+@media (max-width: 766px) {
+
+	.navbar >.container{
+		justify-content: center;
+	}
+
+	.mega-menu-list{
+	    display: none;
+	}
+
+	.mega-menu-search {
+		width: 200px;
+	}
+
+	.mega-menu-icon-user {
+		margin-left: 10px;
+	}
+	
+	.mega-menu-icon-car {
+		margin-left: 10px;
+	}
+
+	.bar-top-telefone {
+		display:none;
+	}
+
+	.bar-top-list {
+		width: 100%;
+		justify-content: flex-start;
+	}
 }
+
 
 @media (max-width: 425px) {
 	.bar-top {
@@ -592,6 +606,10 @@ body {
 		-webkit-box-shadow: -7px 33px 84px 34px rgba(0, 0, 0, 0.15);
 		-moz-box-shadow: -7px 33px 84px 34px rgba(0, 0, 0, 0.15);
 		box-shadow: -7px 33px 84px 34px rgba(0, 0, 0, 0.15);
+	}
+
+	.mega-menu-icon-car-quantidade{
+		display: none;
 	}
 
 	.mega-menu-icon-user {
