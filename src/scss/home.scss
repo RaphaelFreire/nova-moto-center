@@ -566,23 +566,9 @@ body {
 		z-index: 20;
 	}
 
-
-
 	.active {
 		transform: translateY(0%);
 	}
-
-	//   .mega-menu-list .list.-active{
-	//     transform: translateX(0);
-	//   }
-
-	//    .mega-menu-list .list.-active .item.-menu{
-	//      background-image: url(../img/close.svg);
-	//      background-size: 65%;
-	//      transform: translateX(0);
-	//      transition: none;
-	//      z-index: 20;
-	//    }
 
 
 	.mega-menu-icon-car {
@@ -634,7 +620,11 @@ body {
 		z-index: 22;
 	}
 
-	
+	.-fechado{
+		background: url(../img/icon-close.svg) center no-repeat;
+		background-color: var(--nova-moto-center-white);
+	}
+
 
 	// FIM DO MENU MOBILE
 
