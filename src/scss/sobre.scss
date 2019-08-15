@@ -1,0 +1,35 @@
+@import "variaveis.css";
+
+.sobre-imagem {
+	padding-right: 0px;
+	padding-left: 0px;
+	width: 100%;
+
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+.sobre-texto{
+	margin-top: 75px;
+	margin-bottom: 75px;
+	padding: 30px;
+	color: var(--nova-moto-center-6);
+}
+
+.sobre-texto-destaque{
+	font-weight: 600;
+	color: var(--nova-moto-center-2);
+}
+
+@media (max-width: 425px){
+	.sobre-imagem {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.sobre-texto{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+}

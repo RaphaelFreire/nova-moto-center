@@ -67,63 +67,112 @@
 
   <!-- PRODUTO APRESENTACAO -->
 
-    <div class="container produto-apresentacao">
-      <div class="row">
-          <div class="col-md-6">
-              <img class="produto-foto-destaque" src="img/produto.png" alt="">
-              <img class="produto-foto-miniatura" src="img/produto.png" alt="">
-              <img class="produto-foto-miniatura" src="img/produto.png" alt="">
-              <img class="produto-foto-miniatura" src="img/produto.png" alt="">
-              <img class="produto-foto-miniatura" src="img/produto.png" alt="">
-          </div>
-          
-          <div class="col-md-6">
-            <section class="produto-informacao">
-              <dl class="produto-descricao">
-                <dt class="produto-titulo">Capacete LS2 FF353 Réplica Alex Barros</dt>
-                <dd class="produto-codigo">XXXXX</dd>
-
-                <dd class="produto-tamanho">
-                  <fieldset>
-                    <label for="tamanho">Tamanho</label>
-                    <input type="checkbox" name="tamanho" id="tamanho" />
-                    <input type="checkbox" name="tamanho" id="tamanho" />
-                    <input type="checkbox" name="tamanho" id="tamanho" />
-                    <input type="checkbox" name="tamanho" id="tamanho" />
-                  </fieldset>
-                </dd>
-
-                <dd class="produto-cor">
-                  <fieldset>
-                    <label for="cor">Cor</label>
-                    <input type="checkbox" name="cor" id="cor" />
-                    <input type="checkbox" name="cor" id="cor" />
-                    <input type="checkbox" name="cor" id="cor" />
-                  </fieldset>
-                </dd>
-
-                <dd class="">R$ 000,00</dd>
-                <dd class="">ou até 0x de R$ 00,00</dd>
-
-                <form action="">
-                  <input type=""></input>
-                  <input type=""></input>
-                  <button>Enviar</button>
-                </form>
-
-                <button type="submit" class="" value="" onclick="">Comprar</button>
-            
-          </div>
-        </section>
+  <div class="container produto-apresentacao">
+    <div class="row">
+        <div class="col-md-6 produto-foto">
+            <img class="produto-foto-destaque" src="img/produto.png" alt="">
+            <img class="produto-foto-miniatura" src="img/produto.png" alt="">
+            <img class="produto-foto-miniatura" src="img/produto.png" alt="">
+            <img class="produto-foto-miniatura" src="img/produto.png" alt="">
+            <img class="produto-foto-miniatura" src="img/produto.png" alt="">
         </div>
-    </div>
+        
+        <div class="col-md-6">
+          <section class="produto-informacao">
+            <dl class="produto-descricao">
+                <dt class="produto-descricao-titulo">Capacete LS2 FF353 Réplica Alex Barros</dt>
+                <dd class="produto-descricao-codigo">XXXXX</dd>
+
+                <dd>
+                    <img class="img-fluid" src="img/imagem-detalhe-medidas.png" alt="">
+                </dd>
+
+                <dd>
+                  <fieldset class="produto-descricao-tamanho">
+                    <label class="produto-descricao-tamanho-label" for="tamanho">Tamanho</label>
+                    <input class="produto-descricao-input -tamanhoX" type="checkbox" name="tamanho" id="tamanho" value="A" placeholder="First name" />
+                    <input class="produto-descricao-input" type="radio" name="tamanho" id="tamanho" value="2" />
+                    <input class="produto-descricao-input" type="radio" name="tamanho" id="tamanho" value="3" />
+                    <input class="produto-descricao-input" type="radio" name="tamanho" id="tamanho" value="4" />
+                    <input class="produto-descricao-input" type="radio" name="tamanho" id="tamanho" value="3" />
+                    <input class="produto-descricao-input" type="radio" name="tamanho" id="tamanho" value="4" />
+                  </fieldset>
+                </dd>
+
+                <dd class="produto-descricao-cor">
+                  <fieldset>
+                    <label class="produto-descricao-cor-label" for="cor">Cor</label>
+                    <input class="produto-descricao-input -cor-amarelo" type="radio" name="cor" id="cor-amarelo" value="0" />
+                    <input class="produto-descricao-input -cor-cinza" type="radio" name="cor" id="cor-cinza" value="1" />
+                    <input class="produto-descricao-input -cor-preto" type="radio" name="cor" id="cor-preto" value="2" />
+                    <input class="produto-descricao-input -cor-cinza" type="radio" name="cor" id="cor-cinza" value="1" />
+                    <input class="produto-descricao-input -cor-preto" type="radio" name="cor" id="cor-preto" value="2" />
+                  </fieldset>
+                </dd>
+
+                <div class="produto-descricao-grupo-preco-form">
+
+                  <div class="produto-descricao-wrapper-preco">
+                    <dd class="produto-descricao-preco">R$ 000,00</dd>
+                    <dd class="produto-descricao-preco-parcela">ou até 0x de R$ 00,00</dd>
+                  </div>
+
+                  <form class="produto-descricao-form" action="">
+                    <label class="produto-descricao-prazo" for="cor">Prazo de entrega</label>
+                    <input class="produto-descricao-input-prazo" type="" placeholder="Digite seu cep" />
+                    <button class="produto-descricao-botao-prazo">Calcular</button>
+                  </form>
+
+                </div>
+
+              <button type="submit" class="produto-button produto-descricao-botao-comprar" value="" onclick="">Comprar</button>
+          
+        </div>
+      </section>
+
+      </div>
+  </div>
 
 
+
+
+  <!-- PRODUTO TEXTO DO PRODUTO  -->
+  <div class="container descricao-produto">
+      <div class="row">
+        <h1 class="descricao-produto-titulo">Descrição</h1>
+        <p>O Rapid FF353 é o mais novo capacete da LS2 no Brasil.Sinônimo do compromisso básico da marca em oferecer proteção de alto nível para o dia a dia, ele é desenvolvido em HPTT, uma mistura de ABS que proporciona uma estrutura segura e leve, com apenas 1250 gramas, em média. São dois tamanhos de cascos disponíveis, narigueira que auxilia durante a respiração, forro hipoalérgico cortado a laser para um ajuste perfeito, sem costuras em áreas sensíveis, removível e lavável, e viseira em policarbonato Classe A, com sistema de troca rápida. O LS2 Rapid é perfeito para uso diário na cidade e confortável para viagens curtas.</p>
+        <p>A versão Réplica Alex Barros traz as cores da memorável equipe West Honda Pons, marcante na carreira do piloto, pois foi com ela que o brasileiro conquistou seu maior número de vitórias e pódios por uma equipe na MotoGP. O grafismo reproduz com boa fidelidade parte dos elementos que o acompanharam, incluindo o coelho, rápido e resistente, e o eternizado número 4, famoso por figurar na carenagem frontal da sua moto pelos melhores circuitos do mundo. O nome e a assinatura do ex-piloto na parte de trás do casco são outros elementos que compõem a arte.</p>        
+      </div>
+      
+      <div class="row">
+      <h1 class="descricao-produto-caracteristica">Características</h1>
+      <p> 
+          <ul class="descricao-produto-list">
+            <li>Casco em resina termoplástica ABS de alta pressão HPTT;</li>
+            <li>Viseira flat de 2mm (menor distorção óptica) em policarbonato resistente a risco.</li>
+            <li>Acompanha bavete e narigueira removíveis;</li>
+            <li>2 tamanhos de cascos;</li>
+            <li>Forração confortável em tecido Dry Comfort tecnológico e hipoalérgico, totalmente removível e lavável;</li>
+            <li>Cinta jugular com sistema de fechamento engate micrométrico;</li>
+            <li>Sistema de troca rápida de viseira sem o auxílio de ferramentas;</li>
+            <li>Casco totalmente ventilado com entradas de ar superior e frontal e saída de ar traseira;</li>
+            <li>Viseira preparada para Pinlock.</li>
+          </ul>
+      </p>
+      <strong>ATENÇÃO: O capacete acompanha APENAS a viseira cristal.</strong>
+      </div>
+  </div>
+    
+
+
+
+  
+  
   <!-- PRODUTOS TITULO OFERTAS -->
 
   <div class="col-md-12">
     <div class="row justify-content-center">
-      <h1 class="titulo-ofertas">Ofertas</h1>
+      <h1 class="titulo-ofertas">Você também vai gostar</h1>
     </div>
   </div>
 
