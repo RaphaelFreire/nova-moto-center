@@ -74,7 +74,7 @@ body {
 .mega-menu-list > .item {
 	display: block;
 	position: relative;
-	border-left: 1px solid var(--nova-moto-center-1-light);
+	border-left: 1px solid var(--nova-moto-center-5);
 	float: left;
 }
 
@@ -91,6 +91,7 @@ body {
 	font-size: 1rem;
 	font-weight: 600;
 	text-align: center;
+	color: var(--nova-moto-center-1);
 }
 
 .mega-menu-list > .item > a:hover {
