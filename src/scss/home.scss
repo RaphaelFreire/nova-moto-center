@@ -562,7 +562,7 @@ body {
 		color: var(--nova-moto-center-white);
 		z-index: 20;
 		transform: translateY(100%);
-		transition: transform 400ms 100ms ease-in-out;
+		transition: transform 400ms 100ms cubic-bezier(.23,1,.32,1);
 
 		// SOMBRA
 		-webkit-box-shadow: -7px 33px 84px -34px rgba(0, 0, 0, 0.95);
