@@ -1,0 +1,40 @@
+@import "variaveis.css";
+
+.contato-mapa{
+	width: 100%;
+	height: 100%;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.formulario-contato{
+	margin:10%; 
+	width: 450px;
+}
+
+.formulario-input{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 5px;
+	border: 1px solid var(--nova-moto-center-1);
+}
+
+.formulario-textarea{
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 20px;
+	border: 1px solid var(--nova-moto-center-1);
+}
+
+.formulario-botao {
+	width: 100px;
+	color: var(--nova-moto-center-white);
+	background-color: var(--nova-moto-center-2);
+	padding: 10px;
+	border-radius: 0;
+}
+
+.formulario-botao:hover{
+	color: var(--nova-moto-center-white);
+	background-color: var(--nova-moto-center-1);
+}

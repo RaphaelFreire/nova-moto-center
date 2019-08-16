@@ -1,24 +1,24 @@
 @import "variaveis.css";
 
-.wrapper-capacetes{
+.wrapper-produtos{
     justify-content: flex-end!important;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.capacete-titulo{
+.ordena-titulo{
     margin-right: auto;
     margin-left: 20px;
     font-size: 2rem;
     font-weight: 600;
 }
 
-.capacete-ordena-wrapper{
+.wrapper-ordena-dropdown{
     margin-right: 20px;
     border: 1px solid var(--nova-moto-center-5);
 }
 
-.capacete-ordena{
+.ordena-item{
     min-width: 140px;
     text-align: center;
 }
@@ -42,7 +42,7 @@
 	box-shadow: inset 5px 40px -30px rgba(0, 0, 0, 0.05);
 }
 
-.capacete-filtro-titulo{
+.filtro-titulo{
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 20px;
@@ -148,16 +148,16 @@ ul ul a {
 }
 
 @media(max-width: 425px){
-    .wrapper-capacetes{
+    .wrapper-produtos{
         justify-content: center;
     }
 
-    .capacete-titulo{
+    .ordena-titulo{
         margin-right: auto;
         margin-left: auto;
     }
 
-    .capacete-ordena-wrapper{
+    .wrapper-ordena-dropdown{
         margin-right: auto;
         margin-left: auto;
     }
