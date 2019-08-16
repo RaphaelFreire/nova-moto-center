@@ -77,20 +77,24 @@ input[type=radio].-tamanhoX{
 
 
 // INPUT COR
-input[type=radio].-cor-amarelo{
-	background-color: var(--nova-moto-center-8);
+input[type=radio].-cor-vermelho{
+	background-color: var(--nova-moto-center-2);
+}
+
+input[type=radio].-cor-verde{
+	background-color: var(--nova-moto-center-10);
+}
+
+input[type=radio].-cor-laranja{
+	background-color: var(--nova-moto-center-11);
 }
 
 input[type=radio].-cor-amarelo{
 	background-color: var(--nova-moto-center-8);
 }
 
-input[type=radio].-cor-cinza{
-	background-color: var(--nova-moto-center-5);
-}
-
-input[type=radio].-cor-preto{
-	background-color: var(--nova-moto-center-1);
+input[type=radio].-cor-azul{
+	background-color: var(--nova-moto-center-12);
 }
 
 .produto-descricao-grupo-preco-form{
@@ -181,6 +185,17 @@ input[type=radio].-cor-preto{
 	.produto-foto{
 		padding-left:10%;
 		padding-right:10%;
+	}
+
+	.descricao-produto{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.titulo-ofertas{
+		font-size: 1.75rem;
+		text-align: center;
+		height: 120px;
 	}
 
 	.produto-descricao-tamanho{

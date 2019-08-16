@@ -9,7 +9,7 @@
 
 .formulario-contato{
 	margin:10%; 
-	width: 450px;
+	width: 75%;
 }
 
 .formulario-input{
@@ -37,4 +37,41 @@
 .formulario-botao:hover{
 	color: var(--nova-moto-center-white);
 	background-color: var(--nova-moto-center-1);
+}
+
+@media(max-width:990px){
+	.formulario-contato{
+		width: 80%;
+	}
+
+	.formulario-input{
+		margin-bottom: 10px;
+	}
+	
+	.formulario-textarea{
+		margin-bottom: 10px;
+	}
+	
+	.formulario-botao {
+		width: 100px;
+		color: var(--nova-moto-center-white);
+		background-color: var(--nova-moto-center-2);
+		padding: 10px;
+		border-radius: 0;
+	}
+	
+}
+
+
+
+
+@media(max-width:425px){
+	.formulario-contato{
+		margin:0; 
+		width: 100%;
+	}
+
+	.formulario-botao {
+		margin-bottom: 20px;
+	}
 }
