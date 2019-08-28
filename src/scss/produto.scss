@@ -1,68 +1,72 @@
 @import "variaveis.css";
 
-.produto-apresentacao{
+.produto-apresentacao {
 	margin-top: 100px;
 	width: 100%;
 	height: 100%;
 }
 
-.produto-foto{
+.produto-foto {
 	display: flex;
-  	flex-wrap: wrap;
+	flex-wrap: wrap;
 	align-content: center;
 	padding-left: 0px;
-	padding-right: 0px;  
+	padding-right: 0px;
 }
 
-.produto-foto-destaque{
-	width: 100%;
+.produto-foto-destaque {
+	width: 600px;
 	height: auto;
 	border: 1px solid var(--nova-moto-center-5);
 }
 
-.produto-foto-miniatura{
-	width: 25%;
+.produto-foto-miniatura {
+	width: 140px;
 	margin: 0 auto;
 	margin-top: 30px;
 	border: 1px solid var(--nova-moto-center-5);
 }
 
-.produto-informacao{
+.produto-informacao {
 	padding: 30px;
 }
 
-.produto-descricao-titulo{
+.produto-button {
+	position: initial;
+}
+
+.produto-descricao-titulo {
 	font-size: 2rem;
 	font-weight: 800;
 	color: var(--nova-moto-center-2);
 }
 
-.produto-descricao-tamanho{
+.produto-descricao-tamanho {
 	width: 50%;
 	margin-top: 15px;
 	text-transform: uppercase;
 	font-weight: 800;
-	color:var(--nova-moto-center-1);
+	color: var(--nova-moto-center-1);
 }
 
-.produto-descricao-tamanho-informacao{
+.produto-descricao-tamanho-informacao {
 	width: 100%;
 }
 
-.produto-descricao-tamanho-label{
+.produto-descricao-tamanho-label {
 	display: inline-block;
 	width: 100%;
 }
 
-.produto-descricao-cor-label{
+.produto-descricao-cor-label {
 	width: 100%;
 	text-transform: uppercase;
 	font-weight: 800;
-	color:var(--nova-moto-center-1);
+	color: var(--nova-moto-center-1);
 }
 
-.produto-descricao-input{
-	width:30px;
+.produto-descricao-input {
+	width: 30px;
 	height: 30px;
 	border: 1px solid var(--nova-moto-center-1);
 	appearance: none;
@@ -71,73 +75,71 @@
 }
 
 //INPUT TAMANHO
-input[type=radio].-tamanhoX{
-
+input[type="radio"].-tamanhoX {
 }
 
-
 // INPUT COR
-input[type=radio].-cor-vermelho{
+input[type="radio"].-cor-vermelho {
 	background-color: var(--nova-moto-center-2);
 }
 
-input[type=radio].-cor-verde{
+input[type="radio"].-cor-verde {
 	background-color: var(--nova-moto-center-10);
 }
 
-input[type=radio].-cor-laranja{
+input[type="radio"].-cor-laranja {
 	background-color: var(--nova-moto-center-11);
 }
 
-input[type=radio].-cor-amarelo{
+input[type="radio"].-cor-amarelo {
 	background-color: var(--nova-moto-center-8);
 }
 
-input[type=radio].-cor-azul{
+input[type="radio"].-cor-azul {
 	background-color: var(--nova-moto-center-12);
 }
 
-.produto-descricao-grupo-preco-form{
+.produto-descricao-grupo-preco-form {
 	display: flex;
-  	flex-wrap: wrap;
+	flex-wrap: wrap;
 	align-content: center;
 }
 
-.produto-descricao-wrapper-preco{
+.produto-descricao-wrapper-preco {
 	display: inline-block;
 	width: 50%;
 }
 
-.produto-descricao-preco{
+.produto-descricao-preco {
 	display: inline-block;
 	margin-bottom: 0;
 	font-size: 2rem;
 	font-weight: 800;
 }
 
-.produto-descricao-preco-parcela{
+.produto-descricao-preco-parcela {
 	display: inline-block;
 }
 
-.produto-descricao-form{
+.produto-descricao-form {
 	display: inline-block;
 	text-align: middle;
 	width: 50%;
 }
 
-.produto-descricao-prazo{
+.produto-descricao-prazo {
 	width: 100%;
 	display: inline-block;
 	font-size: 1rem;
 }
 
-.produto-descricao-input-prazo{
+.produto-descricao-input-prazo {
 	width: 150px;
 	border: 1px solid var(--nova-moto-center-1);
 	padding: 5px;
 }
 
-.produto-descricao-botao-prazo{
+.produto-descricao-botao-prazo {
 	background-color: var(--nova-moto-center-6);
 	padding: 5px 10px;
 
@@ -147,75 +149,87 @@ input[type=radio].-cor-azul{
 	font-size: 1rem;
 }
 
-.produto-descricao-botao-comprar{
+.produto-descricao-botao-comprar {
 	margin-left: 0;
 	margin-top: 15px;
 }
 
-.descricao-produto{
+.descricao-produto {
 	border-top: 1px solid var(--nova-moto-center-5);
 	margin-top: 30px;
 	padding-top: 30px;
 }
 
-.descricao-produto-titulo{
+.descricao-produto-titulo {
 	font-size: 1.5rem;
 	font-weight: 800;
 }
 
-.descricao-produto-caracteristica{
+.descricao-produto-caracteristica {
 	font-size: 1.5rem;
 	font-weight: 800;
 	width: 100%;
-	list-style-type:none;
+	list-style-type: none;
 	padding-inline-start: 0px;
 }
 
-.descricao-produto-list{
+.descricao-produto-list {
 	padding-inline-start: 20px;
 }
 
-
-@media (max-width: 425px){
-
-	.produto-apresentacao{
-		margin-top: 30px
+@media (max-width: 425px) {
+	.produto-apresentacao {
+		margin-top: 30px;
 	}
 
-	.produto-foto{
-		padding-left:10%;
-		padding-right:10%;
+	.slider-wrapper {
+		display: none;
 	}
 
-	.descricao-produto{
+	.produto-foto {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.produto-foto-destaque {
+		width: 280px;
+		height: 280px;
+		margin: 0 auto;
+	}
+
+	.produto-foto-miniatura {
+		width: 280px;
+		height: 280px;
+	}
+
+	.descricao-produto {
 		padding-left: 50px;
 		padding-right: 50px;
 	}
 
-	.titulo-ofertas{
+	.titulo-ofertas {
 		font-size: 1.75rem;
 		text-align: center;
 		height: 120px;
 	}
 
-	.produto-descricao-tamanho{
-		width:100%;
-	}
-
-	.produto-descricao-wrapper-preco{
-		width:100%;
-	}
-
-	.produto-descricao-preco-parcela{
-		width:100%;
-	}
-
-	.produto-descricao-form{
+	.produto-descricao-tamanho {
 		width: 100%;
 	}
 
-	.produto-descricao-input-prazo{
-		width:175px;
+	.produto-descricao-wrapper-preco {
+		width: 100%;
 	}
-	
+
+	.produto-descricao-preco-parcela {
+		width: 100%;
+	}
+
+	.produto-descricao-form {
+		width: 100%;
+	}
+
+	.produto-descricao-input-prazo {
+		width: 175px;
+	}
 }

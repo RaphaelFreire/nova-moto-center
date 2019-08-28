@@ -20,6 +20,11 @@ body {
 	justify-content: flex-start;
 }
 
+.bar-top-telefone > a {
+	text-decoration: none;
+	color: var(--nova-moto-center-white);
+}
+
 .bar-top-list {
 	list-style-type: none;
 	margin-block-start: 0px;
@@ -33,6 +38,11 @@ body {
 .bar-top-list > .item {
 	display: inline-block;
 	margin-left: 15px;
+}
+
+.bar-top-list > .item > a {
+	text-decoration: none;
+	color: var(--nova-moto-center-white);
 }
 
 .bar-top-list-facebook {
@@ -221,6 +231,8 @@ body {
 	text-align: center;
 	border: 1px solid var(--nova-moto-center-white);
 	font-weight: 900;
+	color: var(--nova-moto-center-white);
+	text-decoration: none;
 }
 
 .slider-chamada-botao:hover {
@@ -235,11 +247,11 @@ body {
 
 // FAIXA VERMELHA
 
-.wrapper-faixa{
+.wrapper-faixa {
 	background-color: var(--nova-moto-center-3);
 }
 
-.faixa-list{
+.faixa-list {
 	list-style-type: none;
 	margin-block-start: 0px;
 	margin-block-end: 0px;
@@ -248,24 +260,24 @@ body {
 	justify-content: center;
 }
 
-.faixa-icone{
+.faixa-icone {
 	width: 30px;
 	height: 30px;
 	float: left;
 	transform: translateY(30%);
 }
 
-.faixa-texto{
+.faixa-texto {
 	font-size: 0.8rem;
 	float: left;
 	margin-bottom: 0;
 	margin-right: 15px;
 	margin-left: 15px;
+	// padding-top: 5px;
+	// padding-bottom: 5px;
 	line-height: 50px;
 	color: var(--nova-moto-center-white);
 }
-
-
 
 // TITULO PRODUTOS
 
@@ -289,6 +301,8 @@ body {
 
 .produto-wrapper {
 	width: 225px;
+	height: 400px;
+	position: relative;
 	background-color: #fff;
 	background-clip: border-box;
 	border: 1px solid var(--nova-moto-center-5);
@@ -301,46 +315,61 @@ body {
 }
 
 .produto-imagem {
-	width: 100%;
+	width: 200px;
+	// height: 200px;
+	display: block;
+	margin: 10px auto;
 	border-top-left-radius: calc(0.25rem - 1px);
 	border-top-right-radius: calc(0.25rem - 1px);
+	border: 1px solid var(--nova-moto-center-5);
 }
 
 .produto-corpo {
+	// display: flex;
+	// position: absolute;
+	bottom: 0;
 	flex: 1 1 auto;
 	padding: 1.25rem;
+	padding-bottom: 0px;
 	line-height: 1.25rem;
 	color: var(--nova-moto-center-6);
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .produto-titulo {
 	font-weight: 600;
-	margin-bottom: 20px;
+	margin-top: 0px;
 	text-align: center;
 	text-transform: uppercase;
+	font-size: 1.1rem;
 }
 
 .produto-preco {
 	font-size: 2rem;
 	font-weight: 800;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-top: 10px;
+	margin-bottom: 5px;
 	text-align: center;
 }
 
 .produto-preco-condicoes {
 	display: block;
-	font-size: 0.9rem;
-	font-weight: 800;
+	font-size: 0.75rem;
+	font-weight: 600;
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .produto-button {
+	position: absolute;
+	bottom:0;
 	display: block;
 	width: 175px;
 	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 20px;
 	font-weight: 900;
 	color: var(--nova-moto-center-white);
 	text-decoration: none;
@@ -381,6 +410,10 @@ body {
 .banner-ofertas-oferta {
 	padding-right: 0px;
 	padding-left: 0px;
+}
+
+.banner-ofertas-oferta > a > img {
+	width: 100%;
 }
 
 .banner-ofertas-oferta > img {
@@ -474,10 +507,7 @@ body {
 	width: 30px;
 }
 
-
-
 // MEDIA QUERIES
-
 
 @media (max-width: 1200px) {
 	.navbar > .container {
@@ -496,6 +526,12 @@ body {
 
 	.mega-menu-search {
 		width: 100%;
+	}
+
+	.faixa-texto{
+		margin-top:5px;
+		margin-bottom:5px;
+		line-height: 20px;
 	}
 }
 
@@ -531,7 +567,7 @@ body {
 		width: 150px;
 	}
 
-	.faixa-texto{
+	.faixa-texto {
 		margin-top: 15px;
 		margin-bottom: 15px;
 		margin-left: 0px;
@@ -710,6 +746,10 @@ body {
 		height: 50px;
 	}
 
+	.wrapper-slider {
+		display: none;
+	}
+
 	.slider::before {
 		display: none;
 	}
@@ -731,43 +771,46 @@ body {
 	.slider-chamada-titulo {
 		font-size: 1.3rem;
 		text-align: center;
-		display:none;
+		display: none;
 	}
 
 	.slider-chamada-botao {
 		width: 125px;
 		font-size: 0.9rem;
 		// padding: 5px;
-		margin:0 auto;
-		display:none;
+		margin: 0 auto;
+		display: none;
 	}
 
-	.carousel-indicators{
+	.carousel-indicators {
 		margin-bottom: 0;
-		display:none;
+		display: none;
 	}
 
-
-	.faixa-list{
+	.faixa-list {
 		display: inline-flex;
 		padding: 10px;
 	}
 
-	.faixa-item{
+	.faixa-item {
 		width: 100%;
 		margin: 5px;
 	}
 
-	.faixa-icone{
-		width:100%;
+	.faixa-icone {
+		width: 100%;
 	}
 
-	.faixa-texto{
-		width:100%;
+	.faixa-texto {
+		width: 100%;
 		text-align: center;
 		font-size: 0.6rem;
-		margin:10px 0;
+		margin: 10px 0;
 		line-height: 13px;
+	}
+
+	.produtos-area {
+		margin-bottom: 0px;
 	}
 
 	.titulo-produtos {
@@ -775,12 +818,19 @@ body {
 	}
 
 	.produto-wrapper {
+		padding-top: 20px;
 		width: 300px;
+		height: auto;
 		margin-bottom: 30px;
 	}
 
-	.produtos-area {
-		margin-bottom: 0px;
+	.produto-corpo {
+		height: auto;
+		position: initial;
+	}
+
+	.produto-button {
+		position: initial;
 	}
 
 	.footer {
