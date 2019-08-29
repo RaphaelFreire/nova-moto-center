@@ -301,7 +301,7 @@ body {
 
 .produto-wrapper {
 	width: 225px;
-	height: 400px;
+	height: 425px;
 	position: relative;
 	background-color: #fff;
 	background-clip: border-box;
@@ -325,16 +325,9 @@ body {
 }
 
 .produto-corpo {
-	// display: flex;
-	// position: absolute;
-	bottom: 0;
 	flex: 1 1 auto;
 	padding: 1.25rem;
-	padding-bottom: 0px;
-	line-height: 1.25rem;
 	color: var(--nova-moto-center-6);
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 .produto-titulo {
@@ -364,7 +357,7 @@ body {
 
 .produto-button {
 	position: absolute;
-	bottom:0;
+	bottom: 0;
 	display: block;
 	width: 175px;
 	margin: 0 auto;
@@ -528,9 +521,9 @@ body {
 		width: 100%;
 	}
 
-	.faixa-texto{
-		margin-top:5px;
-		margin-bottom:5px;
+	.faixa-texto {
+		margin-top: 5px;
+		margin-bottom: 5px;
 		line-height: 20px;
 	}
 }

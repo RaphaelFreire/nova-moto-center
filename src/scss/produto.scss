@@ -29,11 +29,14 @@
 
 .produto-informacao {
 	padding: 30px;
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 
-.produto-button {
-	position: initial;
-}
+// .produto-button {
+// 	position: initial;
+// }
 
 .produto-descricao-titulo {
 	font-size: 2rem;
