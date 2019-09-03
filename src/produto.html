@@ -69,13 +69,60 @@
 
   <div class="container produto-apresentacao">
     <div class="row">
-        <div class="col-md-6 produto-foto">
-            <img class="produto-foto-destaque img-thumbnail" src="img/produto.png" alt="">
-            <img class="produto-foto-miniatura img-thumbnail" src="img/produto.png" alt="">
-            <img class="produto-foto-miniatura img-thumbnail" src="img/produto.png" alt="">
-            <img class="produto-foto-miniatura img-thumbnail" src="img/produto.png" alt="">
-            <img class="produto-foto-miniatura img-thumbnail" src="img/produto.png" alt="">
-        </div>
+               
+          <!--Carousel Wrapper-->
+          <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails col-md-6 produto-foto justify-content-center" data-ride="carousel">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item produto-foto-destaque img-thumbnail active">
+                <img class="d-block w-100" src="img/produto.png"
+                  alt="First slide">
+              </div>
+              <div class="carousel-item produto-foto-destaque img-thumbnail">
+                <img class="d-block w-100" src="img/produto.png"
+                  alt="Second slide">
+              </div>
+              <div class="carousel-item produto-foto-destaque img-thumbnail">
+                <img class="d-block w-100" src="img/produto.png"
+                  alt="Third slide">
+              </div>
+              <div class="carousel-item produto-foto-destaque img-thumbnail">
+                <img class="d-block w-100" src="img/produto.png"
+                    alt="Fourth slide">
+                </div>
+
+             <!--Controls-->
+             <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>    
+            </div>
+            <!--/.Slides-->
+
+           
+
+            <!--/.Controls-->
+            <ul class="produto-foto-miniatura-list">
+              <li data-target="#carousel-thumb" data-slide-to="0" class="active">
+                <img src="img/produto.png" class="produto-foto-miniatura img-thumbnail">
+              </li>
+              <li data-target="#carousel-thumb" data-slide-to="1">
+                <img src="img/produto.png" class="produto-foto-miniatura img-thumbnail">
+              </li>
+              <li data-target="#carousel-thumb" data-slide-to="2">
+                <img src="img/produto.png" class="produto-foto-miniatura img-thumbnail">
+              </li>
+              <li data-target="#carousel-thumb" data-slide-to="3">
+                <img src="img/produto.png" class="produto-foto-miniatura img-thumbnail">
+              </li>
+            </ul>
+          </div>
+          <!--/.Carousel Wrapper-->
+
         
         <div class="col-md-6">
           <section class="produto-informacao">
@@ -84,9 +131,11 @@
                 <dd class="produto-descricao-codigo"> Código: XXXXX</dd>
 
                 <dd>
-                    <img class="img-fluid" src="img/imagem-detalhe-medidas.png" alt="">
+                  <figure class="wrapper-imagem-capacete-medida">
+                    <img class="img-fluid imagem-capacete-medida-1" src="img/medidas-01.svg" alt="">
+                    <img class="img-fluid imagem-capacete-medida-2" src="img/medidas-02.svg" alt="">
+                  </figure>
                 </dd>
-
                 <dd>
                   <fieldset class="produto-descricao-tamanho">
                     <label class="produto-descricao-tamanho-label" for="tamanho">Tamanho</label>
