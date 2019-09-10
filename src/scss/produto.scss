@@ -1,5 +1,18 @@
 @import "variaveis.css";
 
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: var(--nova-moto-center-2);
+}
+
+a{
+	color: var(--nova-moto-center-1);
+}
+a:hover{
+	color: var(--nova-moto-center-2);
+}
+
+
 .produto-apresentacao {
 	margin-top: 100px;
 	width: 100%;
@@ -194,7 +207,7 @@ input[type="radio"].-cor-azul {
 }
 
 .descricao-produto {
-	border-top: 1px solid var(--nova-moto-center-5);
+	// border-top: 1px solid var(--nova-moto-center-5);
 	margin-top: 30px;
 	padding-top: 30px;
 }
@@ -280,3 +293,7 @@ input[type="radio"].-cor-azul {
 		width: 175px;
 	}
 }
+
+
+
+
